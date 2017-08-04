@@ -46,11 +46,11 @@ limitations under the License.
 
 <script>
 window.addEventListener('message', function(event) {
-	if(!/simpl/i.test(event.origin)) return;
+	if(!/bionut\.github/i.test(event.origin)) return;
   log('Sent a message to ' + event.origin + ' and got the following in response:');
   log('<em>' + event.data + '</em>');
 });
-var other = window.open('https://simpl.info/postmessage/popup/other.html');
+var other = window.open('https://bionut.github.io/other.html');
 console.log('Opened window:', window)
 setTimeout( function() {
   other.postMessage('Hi! this is a message from index.html.', '*');
