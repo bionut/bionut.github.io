@@ -1,4 +1,6 @@
 
+console.log('LOADING PRELOAD SCRIPT')
+
 var globalid = 1;
 function traceMethodCalls(obj, id=0) {
     return new Proxy(obj, {
