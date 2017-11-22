@@ -47,7 +47,7 @@ limitations under the License.
     log("<em>" + event.data + "</em>");
     // posting back to message source, i.e. index.html
     // second parameter is eventOrigin: must match event.origin
-    event.source.postMessage("Hi! this is a message from other.html.", "*");
+    setTimeout(function() { event.source.postMessage("Hi! this is a message from other.html.", "*"); }, 5000)
   });
 
   function log(message){
